@@ -1,0 +1,29 @@
+/*accordion*/
+.accordion-button:focus {
+    box-shadow: none;
+}
+#my_accordion_1 .accordion-button.collapsed {
+    color: #fff;
+    background-color: teal;
+}
+#my_accordion_1 .accordion-button{
+	color: #fff;
+	background-color: #0763f0;
+	transition: 0.33s linear;
+}
+#my_accordion_2 .accordion-button.collapsed {
+    color: #fff;
+    background-color: #0763f0;
+}
+#my_accordion_2 .accordion-button{
+	color: #fff;
+	background-color: teal;
+	transition: 0.33s linear;
+}
+.my_alerts_message{
+	color: #fff;
+	background-color: red;
+}
+#my_carousel_1 img{
+	height: 500px;
+}

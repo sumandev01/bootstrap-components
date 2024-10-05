@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap Components</title>
+
+	<!-- Bootstrap icon -->
+	<link rel="stylesheet" href="css/bootstrap-icons.min.css">
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- style css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- media query css -->
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<!-- navbar & dropdown -->
+	<section class="mb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<nav class="navbar navbar-expand-lg bg-body-tertiary">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html">Logo</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_dropdown" aria-controls="navbar_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbar_dropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">about</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">contact</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Dropdown link
+									</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Demo 1</a></li>
+											<li><a class="dropdown-item" href="#">Demo 2</a></li>
+											<li><a class="dropdown-item" href="#">Demo 3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- accordion 1 -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="accordion" id="my_accordion_1">
+						<!-- item 1 -->
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#my_collapse1" aria-expanded="true" aria-controls="my_collapse1">
+								Accordion Item #1
+							</button>
+							</h2>
+							<div id="my_collapse1" class="accordion-collapse collapse" data-bs-parent="#my_accordion_1">
+								<div class="accordion-body">
+									<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<!-- item 2 -->
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#my_collapse2" aria-expanded="false" aria-controls="my_collapse2">
+							Accordion Item #2
+							</button>
+							</h2>
+							<div id="my_collapse2" class="accordion-collapse collapse show" data-bs-parent="#my_accordion_1">
+								<div class="accordion-body">
+									<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<!-- item 2 -->
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#my_collapse3" aria-expanded="false" aria-controls="my_collapse3">
+							Accordion Item #2
+							</button>
+							</h2>
+							<div id="my_collapse3" class="accordion-collapse collapse" data-bs-parent="#my_accordion_1">
+								<div class="accordion-body">
+									<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<!-- accordion 2-->
+				<div class="col-md-6">
+					<div class="accordion" id="my_accordion_2">
+						<!-- item 1 -->
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#my_accordian2_item1" aria-expanded="false" aria-controls="my_accordian2_item1">
+								Accordion Item #1
+							</button>
+							</h2>
+							<div id="my_accordian2_item1" class="accordion-collapse collapse" data-bs-parent="#my_accordion_2">
+								<div class="accordion-body">
+									<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<!-- item 2 -->
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#my_accordian2_item2" aria-expanded="false" aria-controls="my_accordian2_item2">
+							Accordion Item #2
+							</button>
+							</h2>
+							<div id="my_accordian2_item2" class="accordion-collapse collapse" data-bs-parent="#my_accordion_2">
+								<div class="accordion-body">
+									<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<!-- item 2 -->
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#my_accordian2_item3" aria-expanded="false" aria-controls="my_accordian2_item3">
+							Accordion Item #2
+							</button>
+							</h2>
+							<div id="my_accordian2_item3" class="accordion-collapse collapse" data-bs-parent="#my_accordion_2">
+								<div class="accordion-body">
+									<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	<!-- alerts -->
+	<section class="my-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<!-- alerts message 1 -->
+				<div class="col-sm-6">
+					<div id="my_custom_alerts"></div>
+					<button type="button" class="btn btn-primary" id="live_alerts_message">Show live alert</button>
+				</div>
+				<!-- alerts message 2 -->
+				<div class="col-sm-6">
+					<div id="my_custom_alerts1"></div>
+					<button type="button" class="btn btn-primary" id="live1_alerts_message">Show live alert</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- badge -->
+	<section class="my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<button type="button" class="btn btn-info position-relative">
+						Inbox
+					<span class="position-absolute top-0 start-100 translate-end badge rounded-pill bg-danger">
+						99+
+						<span class="visually">unread messages</span>
+					</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- card -->
+	<section class="my-5">
+		<div class="container">
+			<div class="row my-5">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-info">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card"">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-success">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card"">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-secondary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row my-5">
+				<div class="col-12">
+					<!-- card group -->
+					<div class="card-group">
+						<!-- item -->
+						<div class="card">
+							<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary">Last updated 1 hour ago</small>
+							</div>
+						</div>
+						<!-- item -->
+						<div class="card">
+							<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary">Last updated 1 hour ago</small>
+							</div>
+						</div>
+						<!-- item -->
+						<div class="card">
+							<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary">Last updated 1 hour ago</small>
+							</div>
+						</div>
+						<!-- item -->
+						<div class="card">
+							<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary">Last updated 1 hour ago</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-5 g-4 my-5">
+				<!-- item -->
+				<div class="col">
+					<div class="card">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col">
+					<div class="card">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col">
+					<div class="card">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col">
+					<div class="card">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col">
+					<div class="card">
+						<img src="https://images.pexels.com/photos/7791286/pexels-photo-7791286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- carousel -->
+	<section class="my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div id="my_carousel_1" class="carousel slide" data-bs-ride="carousel">
+						<!-- slider indicator -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#my_carousel_1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#my_carousel_1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#my_carousel_1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<!-- slider -->
+						<div class="carousel-inner">
+							<!-- item -->
+							<div class="carousel-item active" data-bs-interval="10000">
+								<img src="https://images.pexels.com/photos/20531398/pexels-photo-20531398/free-photo-of-closeup-of-a-coffee-plant-branch-with-red-beans.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>First slide label</h5>
+									<p>Some representative placeholder content for the first slide.</p>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="carousel-item" data-bs-interval="2000">
+								<img src="https://images.pexels.com/photos/7125687/pexels-photo-7125687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Second slide label</h5>
+									<p>Some representative placeholder content for the second slide.</p>
+								</div>
+							</div>
+						</div>
+						<!-- next previous button -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#my_carousel_1" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#my_carousel_1" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
